@@ -1,6 +1,6 @@
 <p align="center">
   <a href="#">
-    <img width="320" src="https://github.com/xuanheScript/fashop-design-mobile/ant-design-mobile/site/desktop/src/static/logo.png">
+    <img width="320" src="https://github.com/mojisrc/fashop-design-mobile/blob/master/ant-design-mobile/site/desktop/src/static/logo.png">
   </a>
 </p>
 
