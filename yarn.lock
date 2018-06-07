@@ -17,10 +17,15 @@
     lodash "^4.17.5"
     to-fast-properties "^2.0.0"
 
-"@types/react-dom@15.5.1":
-  version "15.5.1"
-  resolved "https://registry.npmjs.org/@types/react-dom/-/react-dom-15.5.1.tgz#f3c3e14c682785923c7d64583537df319442dec1"
+"@types/node@*":
+  version "10.3.1"
+  resolved "https://registry.npmjs.org/@types/node/-/node-10.3.1.tgz#51092fbacaed768a122a293814474fbf6e5e8b6d"
+
+"@types/react-dom@^16.0.6":
+  version "16.0.6"
+  resolved "https://registry.npmjs.org/@types/react-dom/-/react-dom-16.0.6.tgz#f1a65a4e7be8ed5d123f8b3b9eacc913e35a1a3c"
   dependencies:
+    "@types/node" "*"
     "@types/react" "*"
 
 "@types/react@*", "@types/react@~16.0.2":
@@ -203,17 +208,16 @@ antd-mobile-demo-data@^0.1.1:
   version "0.1.4"
   resolved "https://registry.npmjs.org/antd-mobile-demo-data/-/antd-mobile-demo-data-0.1.4.tgz#27237fd220fba1b906fa891cab480d80b05382e9"
 
-antd-mobile@^2.0.0:
-  version "2.1.8"
-  resolved "https://registry.npmjs.org/antd-mobile/-/antd-mobile-2.1.8.tgz#054efda2105d9bf603a0730b8602a8fb21c81c02"
+antd-mobile@^2.1.8:
+  version "2.1.11"
+  resolved "https://registry.npmjs.org/antd-mobile/-/antd-mobile-2.1.11.tgz#24bf37ab73497d20284088ed629d150691066154"
   dependencies:
     array-tree-filter "~2.1.0"
     babel-runtime "6.x"
     classnames "^2.2.1"
     normalize.css "^7.0.0"
     rc-checkbox "~2.0.0"
-    rc-collapse "~1.7.0"
-    rc-drawer "~0.4.9"
+    rc-collapse "~1.9.1"
     rc-slider "~8.2.0"
     rc-swipeout "~2.0.0"
     react-native-camera-roll-picker "^1.2.1"
@@ -222,9 +226,10 @@ antd-mobile@^2.0.0:
     react-native-menu "^0.23.0"
     rmc-calendar "^1.0.0"
     rmc-cascader "~5.0.0"
-    rmc-date-picker "~6.0.6"
+    rmc-date-picker "^6.0.8"
     rmc-dialog "^1.0.1"
-    rmc-feedback "^1.0.0"
+    rmc-drawer "^0.4.11"
+    rmc-feedback "^2.0.0"
     rmc-input-number "^1.0.0"
     rmc-list-view "^0.11.0"
     rmc-notification "~1.0.0"
@@ -8135,7 +8140,7 @@ rc-checkbox@~2.1.5:
     prop-types "15.x"
     rc-util "^4.0.4"
 
-rc-collapse@~1.7.0, rc-collapse@~1.7.5:
+rc-collapse@~1.7.5:
   version "1.7.7"
   resolved "https://registry.npmjs.org/rc-collapse/-/rc-collapse-1.7.7.tgz#16c9fe691f0191f16c9c2eda39989bfc1a19fa2b"
   dependencies:
@@ -8144,7 +8149,7 @@ rc-collapse@~1.7.0, rc-collapse@~1.7.5:
     prop-types "^15.5.6"
     rc-animate "2.x"
 
-rc-collapse@~1.9.0:
+rc-collapse@~1.9.0, rc-collapse@~1.9.1:
   version "1.9.1"
   resolved "https://registry.npmjs.org/rc-collapse/-/rc-collapse-1.9.1.tgz#b0778d067e5e958594cef2d3a9fa5f45a1ae2c3e"
   dependencies:
@@ -8170,14 +8175,6 @@ rc-dialog@~7.1.0:
     babel-runtime "6.x"
     rc-animate "2.x"
     rc-util "^4.4.0"
-
-rc-drawer@~0.4.9:
-  version "0.4.11"
-  resolved "https://registry.npmjs.org/rc-drawer/-/rc-drawer-0.4.11.tgz#94faaec28183ab90f135f0dfe244dca14cfee799"
-  dependencies:
-    babel-runtime "6.x"
-    classnames "^2.2.4"
-    prop-types "^15.5.10"
 
 rc-dropdown@~1.5.0:
   version "1.5.1"
@@ -8574,7 +8571,7 @@ rc-time-picker@~3.3.0:
     prop-types "^15.5.8"
     rc-trigger "^2.2.0"
 
-rc-tooltip@^3.4.2, rc-tooltip@^3.4.3, rc-tooltip@^3.7.0, rc-tooltip@~3.7.0:
+rc-tooltip@^3.4.2, rc-tooltip@^3.7.0, rc-tooltip@~3.7.0:
   version "3.7.2"
   resolved "https://registry.npmjs.org/rc-tooltip/-/rc-tooltip-3.7.2.tgz#3698656d4bacd51b72d9e327bed15d1d5a9f1b27"
   dependencies:
@@ -8582,7 +8579,7 @@ rc-tooltip@^3.4.2, rc-tooltip@^3.4.3, rc-tooltip@^3.7.0, rc-tooltip@~3.7.0:
     prop-types "^15.5.8"
     rc-trigger "^2.2.2"
 
-rc-tooltip@~3.4.6:
+rc-tooltip@^3.4.3, rc-tooltip@~3.4.6:
   version "3.4.9"
   resolved "https://registry.npmjs.org/rc-tooltip/-/rc-tooltip-3.4.9.tgz#6f99ecbbe3925810447fe0ce81a6ed4f721da8c5"
   dependencies:
@@ -9408,7 +9405,14 @@ rmc-cascader@~5.0.0:
     babel-runtime "6.x"
     rmc-picker "~5.0.0"
 
-rmc-date-picker@~6.0.0-alpha.10, rmc-date-picker@~6.0.6:
+rmc-date-picker@^6.0.8:
+  version "6.0.8"
+  resolved "https://registry.npmjs.org/rmc-date-picker/-/rmc-date-picker-6.0.8.tgz#9aab87b3aa8dc9c5a57349d8f0b05de4e8f4808a"
+  dependencies:
+    babel-runtime "6.x"
+    rmc-picker "~5.0.0"
+
+rmc-date-picker@~6.0.0-alpha.10:
   version "6.0.6"
   resolved "https://registry.npmjs.org/rmc-date-picker/-/rmc-date-picker-6.0.6.tgz#b18be72ff86f654fea1050ac8d5899f0d23efe00"
   dependencies:
@@ -9422,12 +9426,13 @@ rmc-dialog@^1.0.1:
     babel-runtime "6.x"
     rc-animate "2.x"
 
-rmc-feedback@^1.0.0:
-  version "1.0.4"
-  resolved "https://registry.npmjs.org/rmc-feedback/-/rmc-feedback-1.0.4.tgz#fba066059ae2057ac0e0b53ea7ce982c8f4f7f19"
+rmc-drawer@^0.4.11:
+  version "0.4.11"
+  resolved "https://registry.npmjs.org/rmc-drawer/-/rmc-drawer-0.4.11.tgz#9a8c6125a4ccd37b916f32f7e8b477d11d413ee3"
   dependencies:
     babel-runtime "6.x"
-    classnames "^2.2.5"
+    classnames "^2.2.4"
+    prop-types "^15.5.10"
 
 rmc-feedback@^2.0.0:
   version "2.0.0"
