@@ -1,6 +1,6 @@
 {
   "name": "fashopd-mobile",
-  "version": "0.1.0",
+  "version": "0.1.3",
   "private": false,
   "description": "Ant Design 移动版的FaShop Design风格定制版",
   "keywords": [
@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "@types/react": "~16.0.2",
-    "@types/react-dom": "15.5.1",
+    "@types/react-dom": "^16.0.6",
     "antd": "2.x",
     "antd-mobile-demo-data": "^0.1.1",
     "antd-tools": "^4.0.6",

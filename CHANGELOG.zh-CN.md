@@ -3,6 +3,15 @@ order: 2
 title: 更新日志
 ---
 
+## 0.1.3
+修复InputItem Locale异常
+
+## 0.1.2
+修复InputItem Less异常
+
+## 0.1.1
+修复InputItem异常
+
 ## 0.1.0
 - PageResult 组件更名为 Result
 
