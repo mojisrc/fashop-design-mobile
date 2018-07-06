@@ -19,5 +19,5 @@ $ npm install fashopd-mobile --save
 ```jsx
 import { Button } from 'fashopd-mobile';
 
-ReactDOM.render(<Button type="primary">按钮<Button>, mountNode);
+ReactDOM.render(<Button type="primary">按钮</Button>, mountNode);
 ```
